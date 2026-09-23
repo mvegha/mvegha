@@ -34,7 +34,7 @@ const MyStack = () => {
               <span className={`text-sm font-semibold ${visual.text}`}>{activeStatus.text}</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-5xl 2xl:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
+            <h2 className="text-4xl sm:text-5xl lg:text-5xl xl:text-5xl 2xl:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
               Transformando ideas en <br className="hidden lg:block" />
               <span className="text-indigo-600 dark:text-indigo-400 relative inline-block">
                 Experiencias Digitales
@@ -46,13 +46,13 @@ const MyStack = () => {
                   <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="3" fill="none" />
                 </svg>
               </span>
-            </h1>
+            </h2>
 
-            <p className="text-base sm:text-lg xl:text-lg 2xl:text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Desarrollador Full Stack con sólida experiencia en la construcción de aplicaciones web y móviles
-              escalables. Experto en integraciones Cloud en AWS, optimización de backend con Node/Python y creación de
-              interfaces modernas con React.
-            </p>
+            <h1 className="text-base sm:text-lg xl:text-lg 2xl:text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              Mariano Vega || Desarrollador Full Stack con sólida experiencia en la construcción de aplicaciones web y
+              móviles escalables. Experto en integraciones Cloud en AWS, optimización de backend con Node/Python y
+              creación de interfaces modernas con React.
+            </h1>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 w-full sm:w-auto">
               <a
