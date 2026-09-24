@@ -2,25 +2,26 @@ import { Github, Linkedin, Mail, ArrowRight, Download } from 'lucide-react';
 
 import TecStack from '../../components/myStack/TecStack';
 
-import statusConfig from '../../data/myStack/statusConfigWork';
+// import statusConfig from '../../data/myStack/statusConfigWork';
 import years from '../../data/myStack/year';
-import availabilityData from '../../data/myStack/availability';
+// import availabilityData from '../../data/myStack/availability';
 
 import cv from '../../assets/cv.pdf';
 
 const email = import.meta.env.VITE_EMAIL;
 
 const MyStack = () => {
-  const activeStatus =
-    availabilityData.options.find(option => option.status === availabilityData.status) || availabilityData.options[0];
-  const visual = statusConfig[activeStatus.status];
+  // const activeStatus =
+  // availabilityData.options.find(option => option.status === availabilityData.status) || availabilityData.options[0];
+
+  // const visual = statusConfig[activeStatus.status];
 
   return (
-    <section id="inicio" className="relative pt-28 pb-20 lg:pt-32 xl:pt-28 2xl:pt-48 overflow-hidden">
+    <section id="inicio" className="relative pt-28 pb-20 sm:pt-30 lg:pt-32 xl:pt-35 2xl:pt-40 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-10 xl:gap-12 2xl:gap-28">
           <div className="w-full lg:w-1/2 text-center lg:text-left animate-slide-up">
-            <div
+            {/* <div
               className={`inline-flex items-center gap-2 px-3 py-1 rounded-full border mb-6 transition-colors duration-300 ${visual.bg} ${visual.border}`}
             >
               <span className="relative flex h-2 w-2">
@@ -32,29 +33,30 @@ const MyStack = () => {
                 <span className={`relative inline-flex rounded-full h-2 w-2 ${visual.dot}`}></span>
               </span>
               <span className={`text-sm font-semibold ${visual.text}`}>{activeStatus.text}</span>
-            </div>
+            </div> */}
 
-            <h2 className="text-4xl sm:text-5xl lg:text-5xl xl:text-5xl 2xl:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
+            <h2 className="text-4xl sm:text-4xl lg:text-4xl xl:text-4xl 2xl:text-5xl font-bold text-gray-900 dark:text-white leading-tight mb-4">
               Transformando ideas en <br className="hidden lg:block" />
               <span className="text-indigo-600 dark:text-indigo-400 relative inline-block">
                 Experiencias Digitales
+                <div className="h-4"></div>
                 <svg
                   className="absolute w-full h-2 sm:h-3 -bottom-1 left-0 text-indigo-300 dark:text-indigo-700 -z-10"
                   viewBox="0 0 100 10"
                   preserveAspectRatio="none"
                 >
-                  <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="3" fill="none" />
+                  {/* <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="3" fill="none" /> */}
                 </svg>
               </span>
             </h2>
 
-            <h1 className="text-base sm:text-lg xl:text-lg 2xl:text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            <h1 className=" text-base sm:text-lg xl:text-lg 2xl:text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
               Mariano Vega || Desarrollador Full Stack con sólida experiencia en la construcción de aplicaciones web y
               móviles escalables. Experto en integraciones Cloud en AWS, optimización de backend con Node/Python y
               creación de interfaces modernas con React.
             </h1>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 w-full sm:w-auto">
+            <div></div>
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-center gap-4 w-full sm:w-auto">
               <a
                 href="#proyectos"
                 className="w-full sm:w-auto justify-center group px-8 py-3.5 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-600/20 flex items-center gap-2"
